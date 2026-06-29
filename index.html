@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ATS Resume Scorer — Download</title>
+  <title>AI-Powered ATS Resume Scorer — Download</title>
   <meta name="description"
-    content="A local-first résumé scoring & rewriting app. Your résumé never leaves your machine.">
+    content="Next-gen AI résumé intelligence. Advanced AI scores and rewrites your résumé to beat the bots — 100% private, on your own machine.">
   <link rel="icon"
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%237b5bff'/%3E%3Cg fill='%23fff'%3E%3Crect x='13' y='33' width='10' height='18' rx='2.5'/%3E%3Crect x='27' y='24' width='10' height='27' rx='2.5'/%3E%3Crect x='41' y='15' width='10' height='36' rx='2.5'/%3E%3C/g%3E%3Ccircle cx='46' cy='13' r='4' fill='%23fff'/%3E%3C/svg%3E">
   <style>
@@ -273,6 +273,21 @@
     a.link {
       color: var(--g2)
     }
+
+    .ai-badge {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+      font-size: 0.42em;
+      font-weight: 800;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--g1), var(--g2));
+      box-shadow: 0 4px 14px rgba(123, 91, 255, .45);
+    }
   </style>
 </head>
 
@@ -296,14 +311,14 @@
         <circle cx="46" cy="13" r="4" fill="#fff" />
       </svg>
       <div>
-        <h1>ATS Resume Scorer</h1>
-        <p class="tag">Score and rewrite your résumé against any job — privately, on your own machine.</p>
+        <h1>AI-Powered ATS Resume Scorer <span class="ai-badge">✨ AI</span></h1>
+        <p class="tag">Next-gen AI résumé intelligence — advanced AI scores &amp; rewrites your résumé to beat the bots. 100% private, on your own machine.</p>
       </div>
     </header>
 
     <div class="hero">
-      <h2>Download the app</h2>
-      <p>Free desktop app for macOS and Windows. Your résumé never leaves your computer.</p>
+      <h2>Beat the bots with AI</h2>
+      <p>Free desktop app for macOS &amp; Windows. AI semantic matching scores your résumé against any job, then AI rewrites it to win — and your résumé never leaves your computer.</p>
       <div class="btns" id="btns">
         <a class="btn" id="mac"
           href="https://github.com/inderjeet1313/ats-scorer-releases/releases/latest/download/ATS-Resume-Scorer-macos.zip">
@@ -371,21 +386,30 @@
     </section>
 
     <section class="card">
-      <h3>What it does</h3>
+      <h3>Powered by AI</h3>
       <div class="grid">
+        <div class="feat"><span class="ic">🧠</span>
+          <div><b>AI semantic matching</b><span>AI embeddings understand the <i>meaning</i> of your résumé vs. the job —
+              not just keywords — for a smarter, more accurate score.</span></div>
+        </div>
         <div class="feat"><span class="ic">🎯</span>
-          <div><b>Transparent ATS scoring</b><span>Multi-signal score against any job description — see exactly what's
-              matched and missing.</span></div>
+          <div><b>Explainable AI score</b><span>A clear /100 score with a per-signal breakdown — see exactly what's
+              matched, missing, and how to fix it.</span></div>
         </div>
         <div class="feat"><span class="ic">✍️</span>
-          <div><b>ChatGPT-ready rewrite</b><span>Generates a paste-ready prompt to rewrite weak sections — no local AI
-              required.</span></div>
+          <div><b>AI rewriting</b><span>Get a paste-ready AI prompt to rewrite weak sections (or rewrite locally with
+              AI on a capable machine) — tailored to your target role.</span></div>
         </div>
         <div class="feat"><span class="ic">🔒</span>
-          <div><b>Fully private</b><span>Runs on your machine. Your résumé is never uploaded anywhere.</span></div>
+          <div><b>100% private AI</b><span>The AI runs on <i>your</i> machine. Your résumé is never uploaded
+              anywhere.</span></div>
+        </div>
+        <div class="feat"><span class="ic">💼</span>
+          <div><b>Role-tuned</b><span>AI prompts tailored to Software, Engineering Management, and finance roles
+              (FP&amp;A, IB, Accounting, Tax, Treasury, Equity Research, Wealth).</span></div>
         </div>
         <div class="feat"><span class="ic">📄</span>
-          <div><b>Export</b><span>Build a clean résumé and export to PDF or DOCX.</span></div>
+          <div><b>Export</b><span>Build a clean, ATS-friendly résumé and export to PDF or DOCX.</span></div>
         </div>
       </div>
     </section>
