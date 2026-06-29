@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATS Resume Scorer — Download</title>
+<meta name="description" content="A local-first résumé scoring & rewriting app. Your résumé never leaves your machine.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%237b5bff'/%3E%3Cg fill='%23fff'%3E%3Crect x='13' y='33' width='10' height='18' rx='2.5'/%3E%3Crect x='27' y='24' width='10' height='27' rx='2.5'/%3E%3Crect x='41' y='15' width='10' height='36' rx='2.5'/%3E%3C/g%3E%3Ccircle cx='46' cy='13' r='4' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --g1:#5b8cff; --g2:#7b5bff;
+    --ink:#1a1f36; --muted:#5b6478; --line:#e6e8ef; --card:#fff; --bg:#f6f7fb;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --ink:#eef1f8; --muted:#9aa3b8; --line:#262b3d; --card:#161a27; --bg:#0e111a; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink); background:var(--bg); -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:840px; margin:0 auto; padding:48px 20px 72px}
+  header{display:flex; align-items:center; gap:16px; margin-bottom:8px}
+  .logo{width:56px;height:56px;border-radius:14px;display:block;flex:0 0 auto;
+    box-shadow:0 6px 22px rgba(91,140,255,.35)}
+  h1{font-size:clamp(28px,5vw,40px); margin:0; letter-spacing:-.02em}
+  .tag{color:var(--muted); font-size:18px; margin:6px 0 0}
+  .hero{
+    margin:36px 0 28px; padding:30px; border-radius:18px; color:#fff;
+    background:linear-gradient(135deg,var(--g1),var(--g2));
+    box-shadow:0 12px 40px rgba(123,91,255,.28);
+  }
+  .hero h2{margin:0 0 6px; font-size:22px}
+  .hero p{margin:0; opacity:.92}
+  .btns{display:flex; flex-wrap:wrap; gap:14px; margin-top:22px}
+  .btn{
+    display:flex; align-items:center; gap:10px; text-decoration:none;
+    background:#fff; color:var(--g2); font-weight:700; font-size:16px;
+    padding:14px 22px; border-radius:12px; border:2px solid transparent;
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .btn:hover{transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,.18)}
+  .btn small{display:block; font-weight:500; font-size:12px; color:var(--muted)}
+  .btn.recommended{outline:3px solid rgba(255,255,255,.6)}
+  .btn svg{width:22px;height:22px;flex:0 0 auto}
+  /* solid CTA that sits on light cards */
+  .btn.cta{background:linear-gradient(135deg,var(--g1),var(--g2)); color:#fff;
+    box-shadow:0 8px 24px rgba(123,91,255,.3); margin-top:14px; display:inline-flex}
+  .btn.cta:hover{box-shadow:0 12px 30px rgba(123,91,255,.4)}
+  .pill{display:inline-block; background:rgba(255,255,255,.22); color:#fff;
+    font-size:12px; font-weight:700; padding:3px 9px; border-radius:999px; margin-left:8px;
+    vertical-align:middle}
+  section.card{
+    background:var(--card); border:1px solid var(--line); border-radius:16px;
+    padding:24px 26px; margin:22px 0;
+  }
+  section.card h3{margin:0 0 12px; font-size:18px}
+  ul{margin:8px 0 0; padding-left:20px}
+  li{margin:6px 0}
+  code{background:rgba(123,91,255,.12); color:var(--g2); padding:2px 7px;
+    border-radius:6px; font-size:14px; font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  .grid{display:grid; gap:18px; grid-template-columns:1fr 1fr}
+  @media (max-width:620px){ .grid{grid-template-columns:1fr} .btns{flex-direction:column} .btn{justify-content:center} }
+  .feat{display:flex; gap:12px; align-items:flex-start}
+  .feat .ic{font-size:22px; line-height:1}
+  .feat b{display:block}
+  .feat span{color:var(--muted); font-size:14px}
+  footer{color:var(--muted); font-size:13px; text-align:center; margin-top:40px}
+  a.link{color:var(--g2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-label="ATS Resume Scorer">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#5b8cff"/><stop offset="1" stop-color="#7b5bff"/>
+      </linearGradient></defs>
+      <rect width="64" height="64" rx="15" fill="url(#g)"/>
+      <g fill="#fff">
+        <rect x="13" y="33" width="10" height="18" rx="2.5"/>
+        <rect x="27" y="24" width="10" height="27" rx="2.5"/>
+        <rect x="41" y="15" width="10" height="36" rx="2.5"/>
+      </g>
+      <circle cx="46" cy="13" r="4" fill="#fff"/>
+    </svg>
+    <div>
+      <h1>ATS Resume Scorer</h1>
+      <p class="tag">Score and rewrite your résumé against any job — privately, on your own machine.</p>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h2>Download the app</h2>
+    <p>Free desktop app for macOS and Windows. Your résumé never leaves your computer.</p>
+    <div class="btns" id="btns">
+      <a class="btn" id="mac" href="https://github.com/inderjeet1313/ats-scorer-releases/releases/latest/download/ATS-Resume-Scorer-macos.zip">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.9c0-2 1.6-3 1.7-3-1-1.4-2.4-1.6-2.9-1.6-1.2-.1-2.4.7-3 .7-.6 0-1.6-.7-2.6-.7-1.3 0-2.6.8-3.2 2-1.4 2.4-.4 6 1 8 .7 1 1.4 2 2.4 2 .9 0 1.3-.6 2.4-.6s1.4.6 2.4.6 1.6-.9 2.3-1.9c.5-.7.7-1.4.7-1.4s-1.6-.6-1.6-2.5zM14.6 6.6c.5-.6.8-1.5.7-2.4-.8 0-1.7.5-2.2 1.2-.5.5-.9 1.4-.8 2.3.9 0 1.7-.5 2.3-1.1z"/></svg>
+        <span>Download for macOS <small>.zip — Apple Silicon & Intel</small></span>
+      </a>
+      <a class="btn" id="win" href="https://github.com/inderjeet1313/ats-scorer-releases/releases/latest/download/ATS-Resume-Scorer-windows.exe">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5l7.5-1v7.2H3V5.5zM3 13.3h7.5v7.2L3 19.5v-6.2zM11.3 4.4L21 3v8.7h-9.7V4.4zM11.3 12.5H21V21l-9.7-1.3v-7.2z"/></svg>
+        <span>Download for Windows <small>.exe — 64-bit</small></span>
+      </a>
+    </div>
+  </div>
+
+  <section class="card">
+    <h3>Before you start — install Ollama</h3>
+    <p>The app uses a local AI model (via <a class="link" href="https://ollama.com" target="_blank" rel="noopener">Ollama</a>) to rewrite résumé sections. Install it once, then launch the app — it pulls the model it needs automatically.</p>
+  </section>
+
+  <section class="card">
+    <h3>First launch</h3>
+    <div class="grid">
+      <div>
+        <b>🍎 macOS</b>
+        <ul>
+          <li>Unzip, then <b>right-click</b> <code>ATS-Resume-Scorer.app</code> → <b>Open</b> → <b>Open</b>.</li>
+          <li>(One time only — it's an unsigned app.)</li>
+          <li>It opens in your browser automatically.</li>
+        </ul>
+      </div>
+      <div>
+        <b>🪟 Windows</b>
+        <ul>
+          <li>Double-click <code>ATS-Resume-Scorer-windows.exe</code>.</li>
+          <li>If SmartScreen appears: <b>More info → Run anyway</b>.</li>
+          <li>Keep the small console window open while you use the app.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3>What it does</h3>
+    <div class="grid">
+      <div class="feat"><span class="ic">🎯</span><div><b>Transparent ATS scoring</b><span>Multi-signal score against any job description — see exactly what's matched and missing.</span></div></div>
+      <div class="feat"><span class="ic">✍️</span><div><b>AI rewriting</b><span>Rewrites weak sections to be stronger and more keyword-aligned.</span></div></div>
+      <div class="feat"><span class="ic">🔒</span><div><b>Fully private</b><span>Runs on your machine. Your résumé is never uploaded anywhere.</span></div></div>
+      <div class="feat"><span class="ic">📄</span><div><b>Export</b><span>Build a clean résumé and export to PDF or DOCX.</span></div></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3>Activation</h3>
+    <p>You'll need an <b>Access Key</b> to unlock the app. Paste it on the activation screen the first time you open it — the key is tied to that one device. Don't have one yet?</p>
+    <a class="btn cta" href="mailto:bojan.aleksic@takamul.ai?subject=Access%20Key%20Request%20%E2%80%94%20ATS%20Resume%20Scorer&body=Hi%2C%0A%0AI%27d%20like%20an%20Access%20Key%20for%20ATS%20Resume%20Scorer.%0A%0AName%3A%0AEmail%3A%0AIntended%20use%3A%0A%0AThanks%21">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7L3.5 6.5h17L12 12zm0 2.2L4 8.8V17h16V8.8L12 14.2z"/></svg>
+      Request an Access Key
+    </a>
+  </section>
+
+  <footer>
+    ATS Resume Scorer · <a class="link" href="https://github.com/inderjeet1313/ats-scorer-releases/releases/latest">All releases</a>
+  </footer>
+
+</div>
+
+<script>
+  // Highlight the visitor's platform as the recommended download.
+  (function(){
+    var p = (navigator.userAgentData && navigator.userAgentData.platform || navigator.platform || "").toLowerCase();
+    var ua = navigator.userAgent.toLowerCase();
+    var isMac = p.indexOf("mac") > -1 || ua.indexOf("mac") > -1;
+    var isWin = p.indexOf("win") > -1 || ua.indexOf("win") > -1;
+    var mac = document.getElementById("mac"), win = document.getElementById("win"), btns = document.getElementById("btns");
+    if (isMac){ mac.classList.add("recommended"); btns.prepend(mac); }
+    else if (isWin){ win.classList.add("recommended"); btns.prepend(win); }
+  })();
+</script>
+</body>
+</html>
